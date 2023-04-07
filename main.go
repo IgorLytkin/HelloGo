@@ -12,7 +12,12 @@ func main() {
 	var x2 int = 10
 	var c string = "Hello World!"
 	var z float64 = 1.045
+	var a = 12
+	var hello = "Hello"
 
-	fmt.Println("Hello, Go!", x, y, max, min, x2, c, z)
+	fmt.Println("Hello, Go!", x, y, max, min, x2, z, c, a, hello)
+
+	var symbol int32 = 'c'
+	fmt.Println(string(symbol))
 
 }
