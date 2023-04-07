@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	var N, b int
+	var N, b, c int
 	_, err := fmt.Scan(&N)
 	if err != nil {
 		return
@@ -14,7 +14,8 @@ func main() {
 		return
 	}
 	// здесь ваш код
-	b = N % 10
+	b = N / 10
+	c = b % 10
 
-	fmt.Println(b)
+	fmt.Println(c)
 }
