@@ -3,13 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	var a, b, c int
-	_, err := fmt.Scan(&a)
-	if err != nil {
-		return
-	}
+	var a, b int
+	fmt.Scan(&a)
+
 	// здесь ваш код
-	b = a * 2
-	c = b + 100
-	fmt.Println(c)
+	b = a * a
+
+	fmt.Println(b)
 }
