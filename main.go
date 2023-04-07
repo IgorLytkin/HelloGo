@@ -1,13 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	var a, b int
-	fmt.Scan(&a)
-
+	var N, b int
+	_, err := fmt.Scan(&N)
+	if err != nil {
+		return
+	}
+	if N > 10000 {
+		return
+	}
 	// здесь ваш код
-	b = a * a
+	b = N % 10
 
 	fmt.Println(b)
 }
