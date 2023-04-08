@@ -16,6 +16,11 @@ func main() {
 			fmt.Print("Число должно быть меньше 10000 !")
 			return
 		}
+	case n == 10000:
+		{
+			fmt.Print(1)
+		}
+
 	case n >= 1000:
 		{
 			fmt.Print(n / 1000)
