@@ -5,17 +5,17 @@ import (
 )
 
 func main() {
-	var N, b, c int
-	_, err := fmt.Scan(&N)
+	var d, h, m, m2 int
+	_, err := fmt.Scan(&d)
 	if err != nil {
 		return
 	}
-	if N > 10000 {
+	if d > 360 {
 		return
 	}
 	// здесь ваш код
-	b = N / 10
-	c = b % 10
-
-	fmt.Println(c)
+	m = d * 2
+	h = m / 60
+	m2 = m % 60
+	fmt.Println("It is", h, "hours", m2, "minutes.")
 }
