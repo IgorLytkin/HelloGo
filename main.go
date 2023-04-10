@@ -5,27 +5,14 @@ import (
 )
 
 func main() {
-	var n int
-	_, err := fmt.Scan(&n)
-	if err != nil {
-		return
-	}
+	var A, B int
+	fmt.Scan(&A)
+	fmt.Scan(&B)
 
-	switch {
-	case n%400 == 0:
-		{
-			fmt.Print("YES")
-			return
-		}
-	case (n%4 == 0) && (n%100 != 0):
-		{
-			fmt.Print("YES")
-			return
-		}
-	default:
-		{
-			fmt.Print("NO")
-			return
-		}
+	var s int
+	s = 0
+	for i := A; i <= B; i++ {
+		s += i
 	}
+	fmt.Println(s)
 }
