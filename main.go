@@ -9,11 +9,24 @@ func main() {
 	fmt.Scan(&n)
 
 	var s int
-	s = 0
-	for i := 1; i <= n; i++ {
-		fmt.Scan(&m)
-		if (m%8 == 0) && (m >= 10 && m < 100) {
-			s += m
+	// если ввели первым не ноль
+	if n != 0 {
+		s = 1
+		m = n
+	}
+
+	for n != 0 {
+		fmt.Scan(&n)
+		switch {
+		case m < n: // новое число больше текущего максимума?
+			{
+				m = n
+				s = 1
+			}
+		case m == n: // новое число равно текущему максимуму?
+			{
+				s++
+			}
 		}
 	}
 	fmt.Println(s)
