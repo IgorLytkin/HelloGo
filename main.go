@@ -20,7 +20,7 @@ func main() {
 				continue
 			}
 			if n/i == m/j {
-				fmt.Println(n / i)
+				fmt.Print(n/i, " ")
 			}
 			m -= m / j * j
 		}
