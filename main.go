@@ -5,16 +5,12 @@ import (
 )
 
 func main() {
-	var n int
-
-	for 1 == 1 {
-		fmt.Scan(&n)
-		if n < 10 {
-			continue
-		}
-		if n > 100 {
-			break
-		}
-		fmt.Println(n)
+	var x, p, y int
+	fmt.Scan(&x, &p, &y)
+	var i = 1
+	for i := 1; x < y; i++ {
+		x += x * p / 100
 	}
+	fmt.Println(i)
+
 }
