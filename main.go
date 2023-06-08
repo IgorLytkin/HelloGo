@@ -5,12 +5,16 @@ import (
 )
 
 func main() {
-	var n, c, d int
-	fmt.Scan(&n, &c, &d)
-	for i := 1; i <= n; i++ {
-		if (i%c == 0) && (i%d != 0) {
-			fmt.Println(i)
+	var n int
+
+	for 1 == 1 {
+		fmt.Scan(&n)
+		if n < 10 {
+			continue
+		}
+		if n > 100 {
 			break
 		}
+		fmt.Println(n)
 	}
 }
