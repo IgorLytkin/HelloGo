@@ -5,29 +5,12 @@ import (
 )
 
 func main() {
-	var n, m int
-	fmt.Scan(&n)
-
-	var s int
-	// если ввели первым не ноль
-	if n != 0 {
-		s = 1
-		m = n
-	}
-
-	for n != 0 {
-		fmt.Scan(&n)
-		switch {
-		case m < n: // новое число больше текущего максимума?
-			{
-				m = n
-				s = 1
-			}
-		case m == n: // новое число равно текущему максимуму?
-			{
-				s++
-			}
+	var n, c, d int
+	fmt.Scan(&n, &c, &d)
+	for i := 1; i <= n; i++ {
+		if (i%c == 0) && (i%d != 0) {
+			fmt.Println(i)
+			break
 		}
 	}
-	fmt.Println(s)
 }
