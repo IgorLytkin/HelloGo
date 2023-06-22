@@ -1,20 +1,17 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	var f float64
-	fmt.Scan(&f)
-	if f <= 0 {
-		fmt.Printf("число %2.2f не подходит\n", f)
-	} else {
-		if f > 10000 {
-			fmt.Printf("%e\n", f)
-		} else {
-			f *= f
-			fmt.Printf("%.4f\n", f)
-		}
+	a := [5]int{1, 2, 3, 4, 5}
+	fmt.Println(a) // [1 2 3 4 5]
+
+	for i := 0; i < len(a); i++ {
+		fmt.Println(a[i])
+		// 1
+		// 2
+		// 3
+		// 4
+		// 5
 	}
 }
