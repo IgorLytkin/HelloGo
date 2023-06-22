@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+import fmt "fmt"
 
 func main() {
 	var a []int
@@ -8,8 +8,10 @@ func main() {
 	c := []int{1, 2, 3}
 	d := []int{1: 12}
 
-	fmt.Println(a) // []
-	fmt.Println(b) // [1 2 3]
-	fmt.Println(c) // [1 2 3]
-	fmt.Println(d) // [0 12]
+	A := make([]int, N, N)
+	for i := 0; i < N; i++ {
+		fmt.Scan(&A[i])
+	}
+	fmt.Print(A[3])
+
 }
