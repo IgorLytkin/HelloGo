@@ -3,27 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	var workArray [10]uint8
+	var a []int
+	var b []int = []int{1, 2, 3}
+	c := []int{1, 2, 3}
+	d := []int{1: 12}
 
-	for i := range workArray {
-		_, err := fmt.Scan(&workArray[i])
-		if err != nil {
-			return
-		}
-	}
-	var a, b, w1, w2 uint8
-	for i := 1; i <= 3; i++ {
-		_, err := fmt.Scan(&a, &b)
-		if err != nil {
-			return
-		}
-		w1 = workArray[a]
-		w2 = workArray[b]
-		workArray[a] = w2
-		workArray[b] = w1
-	}
-
-	for i := range workArray {
-		fmt.Print(workArray[i], " ")
-	}
+	fmt.Println(a) // []
+	fmt.Println(b) // [1 2 3]
+	fmt.Println(c) // [1 2 3]
+	fmt.Println(d) // [0 12]
 }
