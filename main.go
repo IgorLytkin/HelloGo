@@ -1,17 +1,19 @@
 package main
 
-import fmt "fmt"
+import "fmt"
 
 func main() {
-	var a []int
-	var b []int = []int{1, 2, 3}
-	c := []int{1, 2, 3}
-	d := []int{1: 12}
-
-	A := make([]int, N, N)
-	for i := 0; i < N; i++ {
-		fmt.Scan(&A[i])
+	array := [5]int{}
+	var a int
+	for i := 0; i < 5; i++ {
+		fmt.Scan(&a)
+		array[i] = a
 	}
-	fmt.Print(A[3])
-
+	a = array[0]
+	for i := 1; i < 5; i++ {
+		if a < array[i] {
+			a = array[i]
+		}
+	}
+	fmt.Println(a)
 }
