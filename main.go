@@ -22,5 +22,8 @@ func main() {
 		workArray[a] = w2
 		workArray[b] = w1
 	}
-	fmt.Print(workArray)
+
+	for i := range workArray {
+		fmt.Print(workArray[i], " ")
+	}
 }
