@@ -22,5 +22,5 @@ func main() {
 		workArray[a] = w2
 		workArray[b] = w1
 	}
-	fmt.Println(workArray)
+	fmt.Print(workArray)
 }
